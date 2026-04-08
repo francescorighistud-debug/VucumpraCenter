@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner & Fornitori - Vucumpra Center</title>
+    <meta name="description" content="I nostri partner e le comunicazioni ufficiali.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="logo.jpg" alt="Logo VCC" class="logo-img">
+                <span class="logo-text">VCC</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Chi Siamo</a></li>
+                <li><a href="team.html">Il Nostro Team</a></li>
+                <li><a href="prezzi.html">Listino Prezzi</a></li>
+                <li><a href="partner.html" class="active">Partner & Fornitori</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <section>
+            <h2 class="section-title">I Nostri Partner</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">
+                Clicca su un fornitore per visualizzare gli archivi di conversazione (email) e i relativi documenti pdf.
+                (Dati placeholder provvisori)
+            </p>
+
+            <div class="partners-grid">
+                <!-- Partner 1 -->
+                <div class="partner-card" data-name="La Fabbrica del Gusto" data-desc="Azienda di Trasformazione">
+                    <div class="partner-logo">FG</div>
+                    <div class="partner-info">
+                        <h3>La Fabbrica del Gusto</h3>
+                        <p>Azienda di Trasformazione</p>
+                    </div>
+                </div>
+
+                <!-- Partner 2 -->
+                <div class="partner-card" data-name="Naturalia s.r.l" data-desc="Azienda Agricola.">
+                    <div class="partner-logo">NT</div>
+                    <div class="partner-info">
+                        <h3>Naturalia s.r.l</h3>
+                        <p>Azienda Agricola</p>
+                    </div>
+                </div>
+
+                <!-- Partner 3 -->
+                <div class="partner-card" data-name="Hermes Trasporti s.r.l" data-desc="Vettore di trasporto">
+                    <div class="partner-logo">HT</div>
+                    <div class="partner-info">
+                        <h3>Hermes Trasporti s.r.l</h3>
+                        <p>Vettore di trasporto</p>
+                    </div>
+                </div>
+
+                <!-- Partner 4 -->
+                <div class="partner-card" data-name="Ristorante Sapori di Romagna" data-desc="Ristorante">
+                    <div class="partner-logo">SR</div>
+                    <div class="partner-info">
+                        <h3>Ristorante Sapori di Romagna</h3>
+                        <p>Ristorante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL (Hidden by default) -->
+    <div class="modal-overlay" id="partnerModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <div class="partner-logo" id="modalLogo">--</div>
+                <div>
+                    <h2 id="modalTitle">Nome Partner</h2>
+                    <p id="modalDesc" style="color: var(--text-light);">Descrizione Partner</p>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Screenshot Email & Documenti (PDF)</h3>
+            <div class="doc-grid" id="modalDocs">
+                <!-- Dynamically injected via JS -->
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">
+                * I documenti mostrati sono attualmente dei placeholder e verranno sostituiti in seguito.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="logo-container" style="margin-bottom: 1rem;">
+                    <img src="logo.jpg" alt="Logo VCC"
+                        style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover;">
+                    <span class="logo-text" style="font-size: 1.25rem;">VCC</span>
+                </div>
+                <p>Il tuo supermercato di fiducia per le eccellenze italiane ed emiliane.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Sede Legale</h4>
+                <p>Via della Grazia 7</p>
+                <p>Bologna (BO)</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contatti</h4>
+                <p><strong>Email:</strong> ufficio.vucumpracenter@gmail.com</p>
+                <p><strong>Tel:</strong> +39 345 376 5436</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Vucumpra Center (VCC). Tutti i diritti riservati.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
