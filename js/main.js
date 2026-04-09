@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Dati Reali Partner (Cartelle, Email, e Documenti specifici)
         const partnerData = {
             "La Fabbrica del Gusto": {
-                folder: "La Fabbrica del Gusto",
+                folder: "Fabbrica",
                 fattura: null,
                 ddt: "fabbrica_del_gusto_DDT.pdf"
             },
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ddt: null
             },
             "Ristorante Sapore di Romagna": {
-                folder: "Sapore Di Romagna",
+                folder: "Sapore",
                 fattura: "Sapore_romagna_fattura.pdf",
                 ddt: "Sapore_romagna_DDT.pdf",
                 fatturaVettore: "VCC_fattura.pdf"
